@@ -1,3 +1,10 @@
+# Bug report
+
+This dummy app reproduces a bug where using an `async` function
+for Ember's `model` route hook leads to a blank state.
+
+Probably from a promise that never resolves. In this example the promise is a `thenable` object returned from `this.transitionTo`
+
 # async-model
 
 This README outlines the details of collaborating on this Ember application.
