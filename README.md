@@ -1,7 +1,7 @@
 # Bug report
 
 This dummy app reproduces a bug where using an `async` function
-for Ember's `model` route hook leads to a blank state.
+for Ember's `model` route hook leads to never rendering.
 
 Probably from a promise that never resolves. In this example the promise is a `thenable` object returned from `this.transitionTo`
 
